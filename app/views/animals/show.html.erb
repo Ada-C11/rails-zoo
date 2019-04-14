@@ -1,3 +1,4 @@
 <h3>Meet:</h3>
 <%= @animal.name%>
 <p><span>a <%= @animal.species %> who is: <%= @animal.age %></p>
+<%= image_tag @animal.species  + ".jpg", alt: "Our lovely animal"%>

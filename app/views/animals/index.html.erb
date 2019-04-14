@@ -4,9 +4,10 @@
 <% @animals.each do |animal| %>
 <ul>
 <li>
-<p>Name:<%= animal.name %></p>
+<p>Name:<%=link_to animal.name, animal_path(animal) %></p>
 <p>Species:<%= animal.species %></p>
 <p>Age:<%= animal.age %></p>
+<%= image_tag animal.species  + ".jpg", alt: "Our lovely animal"%>
 </li>
 </ul>
 
