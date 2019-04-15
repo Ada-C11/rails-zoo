@@ -1,0 +1,13 @@
+<h3>Here are our Animals!</h3>
+<p>There are <%= @animals.length %>animals in our Zoo</p>
+
+<% @animals.each do |animal| %>
+<ul>
+<li>
+<p>Name:<%=link_to animal.name, animal_path(animal) %></p>
+<p>Species:<%= animal.species %></p>
+<p>Age:<%= animal.age %></p>
+</li>
+</ul>
+
+<% end %>

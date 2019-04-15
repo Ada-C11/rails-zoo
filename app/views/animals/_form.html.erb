@@ -1,0 +1,20 @@
+<%= form_with model: @animal, class: 'animal-form' do |f| %>
+  <p>Please fill out this animal data </p>
+
+  <div>
+    <%= f.label :name, "Please enter a animal name" %>
+    <%= f.text_field :name, placeholder: "a animal" %>
+  </div>
+
+  <div>
+    <%= f.label :species %>
+    <%= f.text_field :species, placeholder: "animal species" %>
+  </div>
+
+  <div>
+  <%= f.label :age %>
+  <%= f.text_field :age, placeholder: "animal age" %>
+  </div>
+
+  <%= f.submit action_name %>
+<% end %>
